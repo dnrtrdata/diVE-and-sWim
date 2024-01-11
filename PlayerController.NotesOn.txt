@@ -1,0 +1,11 @@
+Modified the PlayerController script to accommodate the concept of four distinct zones or lanes: bottom, top, left, and right. This script will be set up in a way that you can later integrate swipe controls for mobile devices.
+
+The character will move to one of the four predefined positions when a swipe is detected. For now, I'll use keyboard inputs as placeholders for these swipes, which you can replace with your swipe control implementation later.
+
+In this script:
+
+bottomPosition, topPosition, leftPosition, and rightPosition represent the world positions of the four lanes. You will set these in the Unity Editor.
+targetPosition is the current target position that the player is moving towards.
+The Update method checks for input and updates targetPosition accordingly. You'll replace this with swipe gesture detection for mobile controls.
+The player smoothly moves towards the targetPosition using Vector3.Lerp.
+You'll need to set the lane positions in the Unity Editor to correspond to the bottom, top, left, and right lanes in your game's environment. Replace the keyboard inputs with your swipe detection logic for mobile controls.
